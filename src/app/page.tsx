@@ -1,26 +1,22 @@
-
-import Herro from "./components/herro";
-import FreshSales from "./components/freshSales";
-import Category from "./components/category";
-import Products from "./components/product";
-import Music from "./components/music";
-import Explore from "./components/explore";
-import Futured from "./components/fetured";
-import Freedelvry from "./components/free";
-
+import Image from "next/image";
+import Headerandhero from "../Components/Headerandhero";
+import Editor from "../Components/Editor";
+import Featured from "../Components/Featured";
+import Product from "../Components/Product";
+import Universe from "../Components/Universe";
+import Post from "../Components/Post";
+import Footer from "../Components/Footer";
 
 export default function Home() {
-    return(
-      <div >
-        
-         <Herro/>
-         <FreshSales/>
-         <Category/>
-         <Products/>
-         <Music/>
-         <Explore/>
-         <Futured/>
-         <Freedelvry/>
-      </div>
-    )
+  return (
+   <>
+   <Headerandhero/>
+   <Editor />
+   <Featured/>
+   <Product />
+   <Universe />
+   <Post />
+   <Footer />
+   </>
+  );
 }
