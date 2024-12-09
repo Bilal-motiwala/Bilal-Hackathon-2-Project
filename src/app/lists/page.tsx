@@ -71,6 +71,28 @@ const Page = () => {
           <h3 className="text-2xl font-bold text-[#252B42]">Shop</h3>
         </div>
 
+         {/* Boxes Section */}
+      <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 px-4">
+        {/* Box Components */}
+        {[1, 2, 3, 4, 5].map((item) => (
+          <div
+            key={item}
+            className="relative group w-full max-w-[150px] h-[200px] mx-auto bg-gray-200 rounded-md overflow-hidden"
+          >
+            <Image
+              src={`/Girlno${item}.jpg`}
+              alt={`Girl ${item}`}
+              width={150}
+              height={150}
+              className="object-cover w-full h-full"
+            />
+            <button className="absolute bottom-2 left-0 right-0 text-white text-sm bg-black bg-opacity-60 px-2 py-1 text-center">
+              Cloths <br /> 5 Items
+            </button>
+          </div>
+        ))}
+      </div>
+
         {/* Responsive Image Grid */}
         <div className="container mx-auto mt-8 px-4">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -122,6 +144,69 @@ const Page = () => {
                 </a>
               </div>
             </div>
+            <div>
+              <h3 className="font-semibold text-gray-800">Company Info</h3>
+              <ul className="mt-4 space-y-2">
+                <li><a href="#" className="hover:text-blue-500">About Us</a></li>
+                <li><a href="#" className="hover:text-blue-500">Carrier</a></li>
+                <li><a href="#" className="hover:text-blue-500">We are hiring</a></li>
+                <li><a href="#" className="hover:text-blue-500">Blog</a></li>
+              </ul>
+            </div>
+            {/* Column 2 */}
+            <div>
+              <h3 className="font-semibold text-gray-800">Legal</h3>
+              <ul className="mt-4 space-y-2">
+                <li><a href="#" className="hover:text-blue-500">About Us</a></li>
+                <li><a href="#" className="hover:text-blue-500">Carrier</a></li>
+                <li><a href="#" className="hover:text-blue-500">We are hiring</a></li>
+                <li><a href="#" className="hover:text-blue-500">Blog</a></li>
+              </ul>
+            </div>
+            {/* Column 3 */}
+            <div>
+              <h3 className="font-semibold text-gray-800">Features</h3>
+              <ul className="mt-4 space-y-2">
+                <li><a href="#" className="hover:text-blue-500">Business Marketing</a></li>
+                <li><a href="#" className="hover:text-blue-500">User Analytics</a></li>
+                <li><a href="#" className="hover:text-blue-500">Live Chat</a></li>
+                <li><a href="#" className="hover:text-blue-500">Unlimited Support</a></li>
+              </ul>
+            </div>
+             {/* Column 4 */}
+             <div>
+              <h3 className="font-semibold text-gray-800">Resources</h3>
+              <ul className="mt-4 space-y-2">
+                <li><a href="#" className="hover:text-blue-500">iOS & Android</a></li>
+                <li><a href="#" className="hover:text-blue-500">Watch a Demo</a></li>
+                <li><a href="#" className="hover:text-blue-500">Customers</a></li>
+                <li><a href="#" className="hover:text-blue-500">API</a></li>
+              </ul>
+            </div>
+
+             {/* Newsletter Section */}
+          <div className="w-full md:w-full lg:w-1/4">
+            <h3 className="font-semibold text-gray-800">Get In Touch</h3>
+            <form className="mt-4">
+              <div className="flex">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="p-2 w-full border border-gray-300 rounded-l-md focus:outline-none focus:ring focus:ring-blue-300"
+                />
+                <button
+                  type="submit"
+                  className="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600"
+                >
+                  Subscribe
+                </button>
+              </div>
+              <p className="mt-2 text-sm text-gray-500">
+                Lore imp sum dolor Amit.
+              </p>
+            </form>
+          </div>
+
           </div>
           <div className="mt-10 text-center text-sm">
             Made With Love By Finland All Rights Reserved
